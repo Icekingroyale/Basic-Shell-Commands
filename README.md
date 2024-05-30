@@ -8,7 +8,6 @@ CLI: CLI stands for Command Line Interface. It is a text-based user interface us
 ### Here are some of my favourite shell commands
 -----
 
-
 1. The command `pwd` is used to show the current working directory
 ```sh
 pwd
@@ -24,31 +23,64 @@ mkdir dirname
  rmdir dirname 
 ```
 4. `ls` shows the content of current working directory
-5. `cd .` is used to move forward
+```sh 
+ls
+```
+5. `cd ` is used to move forward
+```sh
+cd dir
+```
 6. `cd ..` is used to go back
-7. `mv` used to move a directory or file & also used to rename files. 
-    >`mv` newfile 'new directory'. #moves the file to a new directory
+```sh
+cd ..
+```
+7. `mv` used to move a directory or file to a new directory
+```sh
+mv filename 'new directory'
 
-    >`mv` newfile newfile.html #changes file to a different format
+mv filename newfilename
 
-8. `echo` creates a newfile
+mv filename filename.html
+``` 
+
+> the second code renames the file from current name to new name
+
+>the third code changes the file from current format to a new format
+
+8. `touch` creates a newfile
+```sh
+touch index.html
+```
 
 9. `echo` displays a string on a the terminal
-    >`echo` 'Hello World' > newfile #displays on a file
+```sh
+echo hello world
+echo hello world 'new file'
+echo hello world >> 'new file'
+```
+>the second code prints a string on a file
 
-    >`echo` 'Hello World' >> newfile #displays without overwriting the original content
+>the third code prints another string without overwriting the original content
 
 10. `cat` displays the content of a file
+```sh
+cat file
+```
 11. `vi` is used to enter the inbuilt IDE in git bash `i` is used to enter edit mode
-    > `vi` newfile #to enter the IDE with a file
-12. `esc` to exit editor mode & `:q!` to exit the IDE
-    > `:wq` to save and quit if you entered with a file
+```sh
+vi
+vi file
+```
+> the second code "`vi` newfile" is used to enter the IDE with a file
+12. `esc` to exit editor mode & `:q!` to exit the IDE. Also `:wq` to save and quit if you entered with a file
+ 
     
 click [**here**](https://medium.com/@okehchimaobi/binary-beginnings-debugging-my-way-forward-d97b56dc6189) to view full article.
 
 
 
 #### testing the code block function
+
 
 ```sh
 pwd
